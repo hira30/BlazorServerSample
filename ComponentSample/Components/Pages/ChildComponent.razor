@@ -1,0 +1,15 @@
+﻿<h3>子コンポーネントです</h3>
+
+<p>@Message</p>
+<ul>
+    <li>@Model.Name</li>
+    <li>@Model.Age</li>
+</ul>
+
+@code {
+    [Parameter]
+    public string Message { get; set; } = "子コンポーネントで設定したメッセージ";
+
+    [Parameter]
+    public Person Model { get; set; } = new() { Name = "子コンポーネントで設定した名前", Age = 0 };
+}

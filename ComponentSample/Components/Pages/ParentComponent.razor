@@ -1,0 +1,11 @@
+﻿@page "/parent"
+
+<h2>親コンポーネントです</h2>
+
+<ChildComponent />
+<ChildComponent Message="親コンポーネントから渡したメッセージ"/>
+<ChildComponent Model="person" />
+
+@code{
+    private Person person = new() { Name = "親コンポーネントから渡した名前", Age = 30 };
+}
