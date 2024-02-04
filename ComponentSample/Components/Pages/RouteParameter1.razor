@@ -1,0 +1,10 @@
+﻿@page "/route-parameter1/{Number:int}"
+
+<h3>ルートパラメーターとルート制約1</h3>
+
+<p>@Number</p>
+
+@code {
+    [Parameter]
+    public int Number { get; set; }
+}
